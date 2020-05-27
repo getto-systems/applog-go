@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-func ExampleLogger() {
+func Example_applog() {
 	output := log.New(os.Stdout, "", 0)
 	entry := func(level string, message string) string {
 		return fmt.Sprintf("%s: %s", level, message)
