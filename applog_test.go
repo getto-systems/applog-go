@@ -29,8 +29,8 @@ func TestDebugLogger(t *testing.T) {
 	logger.Error("log")
 	logger.Errorf("log: %s", "message")
 
-	logger.Warning("log")
-	logger.Warningf("log: %s", "message")
+	logger.Warn("log")
+	logger.Warnf("log: %s", "message")
 
 	logger.Info("log")
 	logger.Infof("log: %s", "message")
@@ -70,8 +70,8 @@ func TestInfoLogger(t *testing.T) {
 	logger.Error("log")
 	logger.Errorf("log: %s", "message")
 
-	logger.Warning("log")
-	logger.Warningf("log: %s", "message")
+	logger.Warn("log")
+	logger.Warnf("log: %s", "message")
 
 	logger.Info("log")
 	logger.Infof("log: %s", "message")
@@ -101,9 +101,9 @@ func TestInfoLogger(t *testing.T) {
 	}
 }
 
-func TestWarningLogger(t *testing.T) {
+func TestWarnLogger(t *testing.T) {
 	output := &OutputTest{}
-	logger := NewWarningLogger(output, EntryTest)
+	logger := NewWarnLogger(output, EntryTest)
 
 	logger.Audit("log")
 	logger.Auditf("log: %s", "message")
@@ -111,8 +111,8 @@ func TestWarningLogger(t *testing.T) {
 	logger.Error("log")
 	logger.Errorf("log: %s", "message")
 
-	logger.Warning("log")
-	logger.Warningf("log: %s", "message")
+	logger.Warn("log")
+	logger.Warnf("log: %s", "message")
 
 	logger.Info("log")
 	logger.Infof("log: %s", "message")
@@ -152,8 +152,8 @@ func TestErrorLogger(t *testing.T) {
 	logger.Error("log")
 	logger.Errorf("log: %s", "message")
 
-	logger.Warning("log")
-	logger.Warningf("log: %s", "message")
+	logger.Warn("log")
+	logger.Warnf("log: %s", "message")
 
 	logger.Info("log")
 	logger.Infof("log: %s", "message")

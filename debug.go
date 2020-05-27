@@ -41,14 +41,14 @@ func (logger DebugLogger) Errorf(format string, v ...interface{}) {
 
 // Logging WARNING level message.
 // Argument pass through fmt.Sprint()
-func (logger DebugLogger) Warning(v ...interface{}) {
-	logger.config.Warning(v...)
+func (logger DebugLogger) Warn(v ...interface{}) {
+	logger.config.Warn(v...)
 }
 
 // Logging WARNING level message.
 // Argument pass through fmt.Sprintf()
-func (logger DebugLogger) Warningf(format string, v ...interface{}) {
-	logger.config.Warningf(format, v...)
+func (logger DebugLogger) Warnf(format string, v ...interface{}) {
+	logger.config.Warnf(format, v...)
 }
 
 // Logging INFO level message.
