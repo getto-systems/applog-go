@@ -1,0 +1,1 @@
+DOCKER_WRAPPER_IMAGE_golang(){ echo "1.14.3-buster"; }
