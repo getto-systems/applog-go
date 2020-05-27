@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## Version : 1.0.0
+
+- production ready! : See merge request getto-systems-base/labo/go/applog!18
+
+
 ## Version : 0.4.0
 
 - fix: gitlab-ci : See merge request getto-systems-base/labo/go/applog!16
