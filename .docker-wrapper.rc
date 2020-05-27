@@ -1,1 +1,1 @@
-DOCKER_WRAPPER_IMAGE_golang(){ echo "1.14.3-buster"; }
+DOCKER_WRAPPER_IMAGE_golang(){ head -1 $APP_ROOT/.gitlab-ci.yml | sed 's|.*:||'; }
