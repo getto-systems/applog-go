@@ -40,12 +40,12 @@ func (logger ErrorLogger) Errorf(format string, v ...interface{}) {
 }
 
 // Drop messages
-func (ErrorLogger) Warning(v ...interface{}) {
+func (ErrorLogger) Warn(v ...interface{}) {
 	// noop
 }
 
 // Drop messages
-func (ErrorLogger) Warningf(format string, v ...interface{}) {
+func (ErrorLogger) Warnf(format string, v ...interface{}) {
 	// noop
 }
 

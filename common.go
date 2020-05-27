@@ -12,8 +12,8 @@ type Logger interface {
 	Error(v ...interface{})
 	Errorf(format string, v ...interface{})
 
-	Warning(v ...interface{})
-	Warningf(format string, v ...interface{})
+	Warn(v ...interface{})
+	Warnf(format string, v ...interface{})
 
 	Info(v ...interface{})
 	Infof(format string, v ...interface{})
@@ -64,10 +64,10 @@ func (config config) Infof(format string, v ...interface{}) {
 	config.Messagef(level_info, format, v...)
 }
 
-func (config config) Warning(v ...interface{}) {
+func (config config) Warn(v ...interface{}) {
 	config.Message(level_warning, v...)
 }
-func (config config) Warningf(format string, v ...interface{}) {
+func (config config) Warnf(format string, v ...interface{}) {
 	config.Messagef(level_warning, format, v...)
 }
 
