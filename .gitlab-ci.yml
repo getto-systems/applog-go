@@ -17,10 +17,10 @@ test:
     refs:
       - merge_requests
     changes:
-      - **/*.go
+      - "**/*.go"
 
   script:
-    - go test ./...
+    - "go test ./..."
 
 bump_version:
   stage: bump_version
@@ -54,7 +54,7 @@ release:
       - schedules
 
   script:
-    - go build ./...
+    - "go build ./..."
     - curl $TRELLIS_CI_BUMP_VERSION/push_tags.sh | sh
 
 release_success:
