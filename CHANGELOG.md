@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## Version : 1.1.0
+
+- add: examples : See merge request getto-systems-base/labo/go/applog!20
+
+
 ## Version : 1.0.0
 
 - production ready! : See merge request getto-systems-base/labo/go/applog!18
