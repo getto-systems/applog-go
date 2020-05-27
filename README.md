@@ -1,3 +1,3 @@
-# jsonlog
+# applog
 
-simple logger (json formatted)
+simple logger
