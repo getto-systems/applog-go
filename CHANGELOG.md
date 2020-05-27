@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Version : 1.1.2
+
+- fix: example test : See merge request getto-systems-base/labo/go/applog!24
+
+
+
 ## Version : 1.1.1
 
 - fix: example test : See merge request getto-systems-base/labo/go/applog!22
