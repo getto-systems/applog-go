@@ -1,6 +1,6 @@
 package applog
 
-// Logging except debug level message
+// Logging all level message
 type DebugLogger struct {
 	config config
 }
