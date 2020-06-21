@@ -19,6 +19,8 @@ test:
     changes:
       - "**/*.go"
 
+  before_script:
+    - cd v2
   script:
     - "go test ./..."
 
