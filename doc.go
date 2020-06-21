@@ -1,2 +1,2 @@
-// Package jsonlog provides simple logger
+// Package applog provides simple logger
 package applog
