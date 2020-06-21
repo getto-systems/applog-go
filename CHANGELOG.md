@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## Version : 2.0.0
+
+- major version up : See merge request getto-systems-base/labo/go/applog!28
+
+- fix: api : See merge request getto-systems-base/labo/go/applog!27
+- fix: readme : See merge request getto-systems-base/labo/go/applog!26
+
+
+
 ## Version : 1.1.2
 
 - fix: example test : See merge request getto-systems-base/labo/go/applog!24
