@@ -14,10 +14,31 @@ import (
 
 output := log.New(os.Stdout, "", 0)
 
-logger := NewDebugLogger(output)
+debugLogger := NewDebugLogger(output)
 
-logger.Debug("debug: log message")
-// output: debug: log message
+debugLogger.Always("always: log message")
+debugLogger.Info("info: log message")
+debugLogger.Debug("debug: log message")
+// output: always: log message
+// info: log message
+// debug: log message
+
+
+infoLogger := NewInfoLogger(output)
+
+infoLogger.Always("always: log message")
+infoLogger.Info("info: log message")
+infoLogger.Debug("debug: log message")
+// output: always: log message
+// info: log message
+
+
+quietLogger := NewQuietLogger(output)
+
+quietLogger.Always("always: log message")
+quietLogger.Info("info: log message")
+quietLogger.Debug("debug: log message")
+// output: always: log message
 ```
 
 
