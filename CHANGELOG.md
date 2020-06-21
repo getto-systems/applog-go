@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## Version : 2.0.1
+
+- publish: v2 : See merge request getto-systems-base/labo/go/applog!30
+
+
 ## Version : 2.0.0
 
 - major version up : See merge request getto-systems-base/labo/go/applog!28
