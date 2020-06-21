@@ -2,7 +2,7 @@
 
 golang: simple logger
 
-status: production ready
+status: production ready : version 2
 
 ```golang
 package applog
