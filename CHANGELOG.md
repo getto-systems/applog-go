@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## Version : 2.1.0
+
+- fix: doc comment : See merge request getto-systems-base/labo/go/applog!34
+
+
 ## Version : 2.0.2
 
 - fix: test : See merge request getto-systems-base/labo/go/applog!32
