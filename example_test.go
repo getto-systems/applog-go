@@ -1,19 +1,15 @@
 package applog
 
 import (
-	"fmt"
 	"log"
 	"os"
 )
 
 func Example_applog() {
 	output := log.New(os.Stdout, "", 0)
-	entry := func(level string, message string) string {
-		return fmt.Sprintf("%s: %s", level, message)
-	}
 
-	logger := NewDebugLogger(output, entry)
+	logger := NewDebugLogger(output)
 
-	logger.Debug("log message")
-	// output: DEBUG: log message
+	logger.Debug("debug: log message")
+	// output: debug: log message
 }

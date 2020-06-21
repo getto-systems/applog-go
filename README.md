@@ -5,23 +5,19 @@ golang: simple logger
 status: production ready
 
 ```golang
+package applog
+
 import (
-	"fmt"
 	"log"
 	"os"
-
-	"github.com/getto-systems/applog-go"
 )
 
 output := log.New(os.Stdout, "", 0)
-entry := func(level string, message string) string {
-	return fmt.Sprintf("%s: %s", level, message)
-}
 
-logger := NewDebugLogger(output, entry)
+logger := NewDebugLogger(output)
 
-logger.Debug("log message")
-// output: DEBUG: log message
+logger.Debug("debug: log message")
+// output: debug: log message
 ```
 
 
@@ -41,19 +37,19 @@ logger.Debug("log message")
 ### initialize Logger
 
 ```golang
-logger := NewDebugLogger(output, entry)
+logger := NewDebugLogger(output)
+logger := NewInfoLogger(output)
+logger := NewQuietLogger(output)
 ```
 
 - output has `Println(v ...interface{})` method : such as `*log.Logger`
-- entry is formatting function : `func(level string, message string) string`
 
 
 ### leveled Logger
 
-- DebugLogger : logging AUDIT, ERROR, WARN, INFO, DEBUG
-- InfoLogger : logging AUDIT, ERROR, WARN, INFO
-- WarnLogger : logging AUDIT, ERROR, WARN
-- ErrorLogger : logging AUDIT, ERROR
+- DebugLogger : logging Always, Info, Debug message
+- InfoLogger : logging Always, Info message
+- QuietLogger : logging Always message
 
 
 ## License
