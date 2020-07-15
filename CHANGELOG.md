@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## Version : 2.1.1
+
+- fix: gitlab ci : See merge request getto-systems-base/labo/go/applog!36
+
+
 ## Version : 2.1.0
 
 - fix: doc comment : See merge request getto-systems-base/labo/go/applog!34
